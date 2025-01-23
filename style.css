@@ -1,0 +1,35 @@
+html {
+    background-color: gray;
+}
+
+header {
+    justify-content: center;
+    display: flex;
+    color: thistle;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+table {
+    background-color: thistle;
+    border-color: antiquewhite;
+    border-radius: 10px;
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    color: thistle;
+}
+
+a {
+    font-size: 30px;
+    font-weight: bold;
+    color: thistle;
+    text-decoration: none;
+}
