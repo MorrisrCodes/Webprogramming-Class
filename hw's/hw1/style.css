@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: rgb(41, 40, 40);
+    font-family: sans-serif;
     color: white;
     height: 50vh;
     width: 80vw;
@@ -28,4 +29,19 @@ body {
 
 main {
     
+}
+
+#me {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    border: 10px solid black;
+    border-width: 1px;
+    border-color: black;
+    float: right;
+}
+
+#csimg img {
+    width: 50px;
+    height: 60px;
 }
