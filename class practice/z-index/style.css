@@ -1,0 +1,38 @@
+img {
+    z-index: 1;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-color: red;
+ }
+ 
+ .words {
+    font-family: impact;
+    font-size: 60px;
+ }
+ 
+ .first {
+    z-index: 2;
+    position: absolute;
+    top: 110px;
+    left: 220px;
+
+ }
+ 
+ .heart {
+    color: red; 
+    font-size: 80px;
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 240px;
+ }
+ 
+ .last {
+    z-index: 2;
+    position: absolute;
+    top: 165px;
+    left: 220px;
+ }
+ 
