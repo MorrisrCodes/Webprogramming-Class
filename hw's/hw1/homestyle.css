@@ -59,11 +59,9 @@ main {
     height: 200px;
     border-radius: 5%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    /*
     position: absolute;
     right: 220px;
     top: 160px;
-    */
 }
 
 #csimg img {
@@ -85,8 +83,10 @@ main {
     margin-right: 5px;
 }
 
-#blank {
-    color: rgb(14, 13, 13); 
+#notpic {
+    position: absolute;
+    top: 370px;
+    right: 250px;
 }
 
 a {
