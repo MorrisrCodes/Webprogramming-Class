@@ -29,11 +29,11 @@
     flex container by setting it's <code>display</code> property to <code>flex</code>.
     </p>
 
-    <main>
+    
       <!-- main area -->
-
+      <main>
       <!-- left column -->
-      <aside>
+      <aside class="column">
         <h3>Left column</h3>
         <p>
         This column sits on the left of the main area. Wrap this column in a page section that indicates that it is
@@ -47,7 +47,7 @@
       <!-- end left column -->
 
       <!-- right column -->
-      <div id="right">
+      <div id="right" class="column">
         <h3>Right column</h3>
         <p>
         This column is on the right of the main content area. It takes up 2/3 of the main content area width.
@@ -68,17 +68,17 @@
         </p>
       </div>
       <!-- end right column -->
-
+      </main>
       <!-- end main area -->
-    </main>
+   
 
-    <p>
+    <p id="second-to-final">
     Both columns should have <code>2em</code> of padding, <code>2em</code> of margin, and a <code>4px</code>
     dashed red border. Give both columns a class that they can share so that you don't have to duplicate this
     box model CSS.
     </p>
 
-    <p>
+    <p id="final-para">
     Finally, use <code>position: fixed</code> to set the position of this paragraph element so that is is
     <code>5px</code> away from the bottom of the browser view port. Depending on how big your browser screen is,
     other text from the page might overlap with it. That proves to be a big challenge with fixed position
