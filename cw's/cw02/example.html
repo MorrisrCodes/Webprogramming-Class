@@ -33,36 +33,40 @@
       <!-- main area -->
 
       <!-- left column -->
-      <h3>Left column</h3>
-      <p>
-      This column sits on the left of the main area. Wrap this column in a page section that indicates that it is
-      an &lt;aside&gt; for the page.
-      </p>
-      <p>        
-      It takes up 1/3 of the width of the overall content area. Accomplish this by setting the
-      <code>flex-basis</code> property to <code>33%</code>.
-      </p>
+      <aside>
+        <h3>Left column</h3>
+        <p>
+        This column sits on the left of the main area. Wrap this column in a page section that indicates that it is
+        an &lt;aside&gt; for the page.
+        </p>
+        <p>        
+        It takes up 1/3 of the width of the overall content area. Accomplish this by setting the
+        <code>flex-basis</code> property to <code>33%</code>.
+        </p>
+      </aside>
       <!-- end left column -->
 
       <!-- right column -->
-      <h3>Right column</h3>
-      <p>
-      This column is on the right of the main content area. It takes up 2/3 of the main content area width.
-      Accomplish this by setting it's <code>flex-basis</code> to <code>67%</code>.
-      </p>
+      <div id="right">
+        <h3>Right column</h3>
+        <p>
+        This column is on the right of the main content area. It takes up 2/3 of the main content area width.
+        Accomplish this by setting it's <code>flex-basis</code> to <code>67%</code>.
+        </p>
 
-      <img src="puppy-mowgli.jpg" alt="puppies">
-      <p>
-      Float the above image to the right, so that it's to the right of this text instead of above it. Set it's
-      <code>width</code> to <code>200px</code> so that it isn't so huge. The height will adjust to keep the scale
-      of the image.
-      </p>
+        <img src="puppy-mowgli.jpg" alt="puppies">
+        <p>
+        Float the above image to the right, so that it's to the right of this text instead of above it. Set it's
+        <code>width</code> to <code>200px</code> so that it isn't so huge. The height will adjust to keep the scale
+        of the image.
+        </p>
 
-      <p>
-      For this paragraph, we don't want the text to wrap around the floating image anymore. Use
-      <code>clear: both</code> to cause this paragraph to move down below the floating image. Give it an
-      <code>id</code> or a <code>class</code> so that you can select this paragraph specifically in your CSS.
-      </p>
+        <p id="special-para">
+        For this paragraph, we don't want the text to wrap around the floating image anymore. Use
+        <code>clear: both</code> to cause this paragraph to move down below the floating image. Give it an
+        <code>id</code> or a <code>class</code> so that you can select this paragraph specifically in your CSS.
+        </p>
+      </div>
       <!-- end right column -->
 
       <!-- end main area -->
