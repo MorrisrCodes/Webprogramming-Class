@@ -223,3 +223,14 @@ a {
     margin: 0;
     padding: 0;
 }
+
+#greenbar-div {
+    display: flex;
+    background: url('rottenbackground.png') repeat-x;
+    z-index: 10;
+    margin-bottom: 20px;
+    width: 550px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
