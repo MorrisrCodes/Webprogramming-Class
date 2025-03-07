@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <main>
+            <style type="text/css">
+                fieldset {
+                background-color: #ffffcc;
+                margin-left: auto;
+                margin-right: auto;
+                width: 21em;
+                }
+
+                form {
+                font-family: "Helvetica", sans-serif;
+                }
+
+                input {
+                margin-bottom: 0.5em;
+                }
+
+                input[type="submit"] {
+                font-weight: bold;
+                margin-left: 10em;
+                }
+
+                label.heading {
+                float: left;
+                margin-right: 1em;
+                text-align: right;
+                width: 7em;
+                }
+
+                legend {
+                background-color: white;
+                border: 1px solid black;
+                padding: 0.25em;
+                }
+            </style>
+
+            <form action="http://localhost:8000/params.php" method="post">
+            <fieldset>
+                <legend>New User Signup</legend>
+                
+                <label class="heading" for="name">           
+                <label class="heading" for="address">Address:</label>
+                <input type="text" name="address" id="address" /> <br />
+                
+                <label class="heading">Credit Card:</label>
+                <label><input type="radio" name="ccard" value="visa" /> Visa</label>
+                <label><input type="radio" name="ccard" value="mc" /> MasterCard</label> <br />
+
+                <input type="submit" value="Sign Up" />
+            </fieldset>
+            </form>
+        </main>
+    </body>
+    <script></script>
+</html>
