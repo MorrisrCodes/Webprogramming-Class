@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job app</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <main>
+            <h1>Job Application Form</h1>
+
+            <form action="http://localhost:8000/index.php" method="post">
+                <label for="position">Postition Applied For:</label><br>
+                <input type="text" id="position" name="position"><br>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label>Gender:</label><br>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="male"><br>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="female"><br>
+                <label for="Nationality">Nationality:</label><br>
+                <input type="text" id="Nationality" name="Nationality"><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br>
+                <label for="address">Address:</label><br>
+                <textarea type="address" id="address" name="address"></textarea><br>
+                <label for="phone">Telephone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+
+
+                <h2>Educational History and Qualifications:</h2>
+
+                <textarea type="text" id="education" name="education"></textarea><br>
+
+                <h2>Work Experience/Employment/Training:</h2>
+
+                <label for='experience'>Years of Experience:</label><br>
+                <input type="range" id="experience" name="experience"><br>
+                <label for="Statement">Personal Statement:</label><br>
+                <textarea type="text" id="Statement" name="Statement"></textarea><br>
+
+                <h2>Referees:</h2>
+
+                <label for="refname">Name:</label><br>
+                <input type="text" id="refname" name="refname"><br>
+                <label for="refoccupation">Occupation:</label><br>
+                <input type="text" id="refoccupation" name="refoccupation"><br>
+                <label for="refrelationship">Relationship:</label><br>
+                <select id="refrelationship" name="refrelationship">
+                    <option value="friend">Friend</option>
+                    <option value="family">Family</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="refaddress">Address:</label><br>
+                <input type="address" id="refaddress" name="refaddress"><br>
+                <label for="refphone">Telephone:</label><br>
+                <input type="tel" id="refphone" name="refphone"><br>
+                <label>Vegetarian:</label><br>
+                <label for="yesveg">Yes</label>
+                <input type="radio" id="yesveg" name="yesveg"><br>
+                <label for="noveg">No</label>
+                <input type="radio" id="noveg" name="noveg"><br>
+                <label for="fruits">Select Fruits (Hold Ctrl/Command to select multiple):</label><br>
+                <select name="fruits" id="fruits" multiple size="5">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="Cherry">Cherry</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Strawberry">Strawberry</option>
+                </select><br>
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset Form" class="button">
+            </form>
+        </main>
+    </body>
+    <script></script>
+</html>
