@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+            .container {
+                margin: 40px;
+            }
+
+            form label {
+                display: inline-block;
+                width: 100px;
+                margin-bottom: 10px;
+            }
+
+            form input {
+                width: 200px;
+                padding: 4px;
+                margin-bottom: 10px;
+                border: 1px solid #a9a9a9;
+            }
+
+            button {
+                margin-left: 100px;
+                padding: 4px 12px;
+                border: 1px solid #a9a9a9;
+                background-color: #f0f0f0;
+            }
+
+            .error {
+            display: inline-block;
+            width: 300px;
+            color: red;
+            margin-left: 100px;
+            margin-bottom: 4px;
+            text-decoration: underline;
+            }
+
+            .field-wrapper {
+                margin-bottom: 8px;
+            }
+
+            #result {
+                margin-top: 30px;
+                margin-left: 100px;
+                font-size: 16px;
+            }
+        </style>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+        <script>
+            function validate() {
+                const id = document.getElementById('id').value.trim();
+                const firstname = document.getElementById('firstname').value.trim();
+                const lastname = document.getElementById('lastname').value.trim();
+
+                const errorid = document.getElementById('errorid');
+                const errorfirstname = document.getElementById('errorfirstname');
+                const errorlastname = document.getElementById('errorlastname');
+
+                errorid.innerHTML = '';
+                errorfirstname.innerHTML = '';
+                errorlastname.innerHTML = '';
+
+                let empty = [];
+
+                if (id === '') {
+                    errorid.innerHTML = 'Please Enter an ID';
+                    empty.push('id');
+                }
+                if (firstname === '') {
+                    errorfirstname.innerHTML = 'Please Enter a First Name';
+                    empty.push('firstname');
+                }
+                if (lastname === '') {
+                    errorlastname.innerHTML = 'Please Enter a Last Name';
+                    empty.push('lastname');
+                }
+                
+                if (empty.length > 0) {
+                    alert('You forgot to fill in the following field(s): ' + empty.join(', '));
+                    return false;
+                }
+
+                const resultdiv = document.getElementById('result');
+                resultdiv.innerHTML = `
+                <p>UserID: ${id}</p>
+                <p>FirstName: ${firstname}</p>
+                <p>LastName: ${lastname}</p>`;
+
+                document.getElementById('id').value = '';
+                document.getElementById('firstname').value = '';
+                document.getElementById('lastname').value = '';
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <form id="form">
+                    <div class="field">
+                        <span id="errorid" class="error"></span><br>
+                        <label for="id">ID:</label>
+                        <input type="text" id="id" name="id"><br>
+                    </div>
+                    <div class="field">
+                        <span id="errorfirstname" class="error"></span><br>
+                        <label for="firstname">FirstName:</label>
+                        <input type="text" id="firstname" name="firstname"><br>
+                    </div>
+                    <div class="field">
+                        <span id="errorlastname" class="error"></span><br>
+                        <label for="lastname">LastName:</label>
+                        <input type="text" id="lastname" name="lastname"><br>
+                    </div>
+                    <button type="button" onclick="validate()">Add</button>
+                </form>
+                <div id="result"></div>
+            </section>
+        </main>
+    </body>
+</html>
