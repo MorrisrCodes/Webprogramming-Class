@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guessing Game</title>
+        <link rel="stylesheet" href="style2.css" />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <main>
+            <h1>Memory Game</h1>
+            <div class="controls">
+                <label>Number of Pairs: 
+                <select id="pairCount">
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                </select>
+                </label>
+                <label>Difficulty (seconds to memorize): 
+                <select id="difficulty">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="8">8</option>
+                </select>
+                </label>
+                <button onclick="hidePopup()">Start Game</button>
+                <a href=index3.html>How to Play</a>
+            </div>
+            <div id="timer"></div>
+            <div class="grid" id="gameGrid"></div>
+            <div class="award" id="award"></div>
+
+            <div class="overlay" id="overlay"></div>
+    </body>
+    <script src="index2.js"></script>
+</html>
